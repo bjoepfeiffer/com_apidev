@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.2.0" method="upgrade">
+
+	<name>Api</name>
+	<creationDate>August 2017</creationDate>
+	<author>Brandon Pfeiffer</author>
+	<authorEmail>bjoepfeiffer@gmail.com</authorEmail>
+	<version>0.0.1</version>
+	<description>An simple api to help with backend work.</description>
+
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>api.php</filename>
+	</files>
+
+	<administration>
+		<menu link='index.php?option=com_helloworld'>Api</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>api.php</filename>
+			<folder>sql</folder>
+		</files>
+	</administration>
+
+</extension>

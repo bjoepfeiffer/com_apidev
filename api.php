@@ -1,0 +1,1 @@
+Welcome to your api extension's administrator page!
